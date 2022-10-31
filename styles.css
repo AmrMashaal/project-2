@@ -1,0 +1,433 @@
+/* Selector{
+ Property: Value;
+ProprtyTow: Value
+} */
+
+/* px
+em -> Time
+rem -> Root Time 
+vw -> View Port Width*/
+
+/* .ch:visited{
+    color: blue;
+} */
+
+/* div:empty{
+    border: 10px solid red;
+    width: 35%;
+    height: 200px;
+    background-color: gray;
+} */
+
+body {
+    background-color: #0d2130 ;
+    font-family: 'Cairo', sans-serif;
+}
+
+:root {
+    --mianColor: purple;
+    --mainPadding: 10px;
+}
+
+.head {
+    background-color: #262626;
+    padding: 30px 0px;
+    position: relative;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+    box-shadow: 0px 1px 50px 0px #08000c;
+    display: flex;
+}
+
+.mashaalz {
+    color: var(--mianColor);
+    margin: 0px 20px 10px;
+    font-size: 40px;
+    text-shadow: -1px 0px 0px #0d578f;
+    font-family: 'Silkscreen', cursive;
+    text-align: left;
+    /* opacity: 0.7;  */
+    position: absolute;
+    top: 0;
+    transition-duration: .5s;
+    /* transition-delay: 2s; */
+    /* transition-property: margin-left, margin-top, width;  */
+}
+
+.mashaalz:hover{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: rgb(255, 217, 0);
+    text-shadow: -1px 0px 0px rgb(184, 15, 15);
+}
+
+.mashaalz::first-letter {
+    color: rgb(255, 217, 0);
+}
+
+.ser {
+    width: 35%;
+    border-radius: 10px;
+    background-color: #1c1c1c;
+    font-weight: bolder;
+    text-indent: 5px;
+    padding: calc(var(--mainPadding) - 6px );
+    color: white;
+    position: absolute;
+    top: 0;
+    margin-left: 271px;
+    margin-top: 13px;
+}
+
+.ser:focus {
+    outline: none;
+    border: #ffffff solid 3px;
+}
+
+    /* vertical-align: top; */
+    /* direction: rtl; */
+    /* background-attachment: fixd; */
+
+.bh {
+    margin: auto;
+    display: block;
+    /* position: static; ده العنصر الطبيعي */
+    /* position: relative;   العنصر بيتحرك علي نفسه و بيحاوط علي ال جواه*/
+    /* position: absolute;  العنصر بيتحرك في المكان ال متحددله بس*/
+    /* position: sticky;  بيخلي الكلمه تكمل معاك لما تعديها*/
+    width: 550px;
+    /* border: 10px solid #e7e7e7; */
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-top: -40px;
+}
+
+.hr-img1{
+    margin-top: 2Zpx;
+}
+
+.wise {
+    color: white;
+    background-color: #606060;
+    /* background-attachment: fixed; */
+    padding: 15px;
+    width: 90%;
+    margin: 30px auto;
+    border-style: solid;
+    border-width: 0px 0px 0px 8px;
+    border-color: rgb(255, 255, 255);
+    border-top-right-radius: 20px;
+    /* visibility: hidden; */
+    text-shadow: 1px 1px 20px #ff000080;
+    text-align: center;
+    letter-spacing: 3px;
+    /* text-indent: 20px; */
+    /* line-height: 1.6; */
+    /* word-break: ; لو مثلا في لينك عايزه يتجزاء <-*/
+    /* font-weight: bold; */
+    /* opacity: 0.5; */
+    /* نص الارتفاع بتاع العنصر عشان يجي في النص (margin-top) خلي ال*/
+    /* box-sizing: border-box; */
+    transition-duration: .5s;
+    /* !important */
+    font-family: 'Righteous';
+}
+
+.wise:hover{
+    padding: 25px;
+    background-color: #3dad93;
+}
+
+::selection {
+    background-color: rgb(157, 33, 33);
+    color: yellow;
+}
+
+.mashaal {
+    border-color: black white green red;
+    border-width: 10px;
+    border-style: solid;
+    visibility: hidden;
+}
+
+.face-insta-parent{
+    background-color: #4c0509;
+    width: 246px;
+    height: 42px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 17px;
+    transition-duration: .5s;
+}
+
+.face-insta-parent:hover{
+    width: 260px;
+    padding: 5px;
+    background-color: #881117;
+    height: 50px;
+}
+
+.face {
+    background-color: rgb(74, 74, 245);
+    padding: 3px 20px 8px;
+    display: inline-block;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    text-decoration: none;
+    /* cursor: pointer; */
+    right: 132px;
+    position: fixed;
+    bottom: 5px;
+}
+
+.insta {
+    background-color: rgb(249 104 9 / 72%);
+    padding: 3px 20px 8px;
+    display: inline-block;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    text-decoration: none;
+    /* cursor: pointer; */
+    right: 5px;
+    position: fixed;
+    bottom: 5px;
+}
+
+/* border: inherit; */
+
+.test1 {
+    background-color: #9c2c2c;
+    color: white;
+}
+
+.test1 div {
+    background-color: #145a8f;
+    text-align: center;
+    padding: 10px 0px;
+    float: left;
+    margin-left: 1%;
+    width: calc(95% / 4);
+    font-size: 20px;
+    /* width: calc(100% - 90px) / 4; */
+}
+
+.lorem {
+    color: white;
+    background-color: #1c1c1c;
+    text-align: left;
+    clear: both;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.lorem::first-line {
+    font-weight: bold;
+    color: springgreen;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200px;
+    font-size: large;
+}
+
+table td {
+    background-color: gray;
+    border: 2px solid rgb(108 108 108);
+    text-align: center;
+    color: white;
+}
+
+table thead td {
+    background-color: #145a8f;
+    color: #eee;
+    text-align: center;
+    border-color: rgb(108 108 108);
+}
+
+a:hover {
+    color: #e3b911;
+}
+
+.ch:checked+label {
+    color: rgb(0, 204, 255);
+}
+
+.tex {
+    border: #9d0009 5px solid;
+    margin: auto;
+    display: block;
+    width: 295px;
+}
+
+.tex:focus {
+    border: 5px solid #ff2323;
+    outline: none;
+}
+
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: test-count;
+}
+
+.user {
+    background-color: gray;
+    width: 50px;
+    text-align: center;
+    float: left;
+    font-size: 50px;
+    height: 55.5px;
+    padding: 15px;
+    margin-right: 20px;
+    color: white;
+}
+
+.user:hover+.one{
+    background-color: #30b798;
+}
+
+.one:hover{
+    background-color: #30b798;
+}
+
+.one {
+    background-color: gray;
+    width: 600px;
+    text-align: center;
+    float: left;
+    padding: 15px;
+    color: white;
+    height: 55.5px;
+}
+
+/* .one::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: #02ffc5;
+    top: 0px;
+    right: -10px;
+} */
+
+.one::after{
+    /* content: counter(test-count); */
+    background-color: #197963c3;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.one::before{
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: -27px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #02ffc5 transparent transparent;
+    display: none;
+}
+
+.one:hover::before{
+    display: block;
+}
+
+.dfdsfds{
+    background-color: gray;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+.dfdsfds:hover{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 400px;
+    padding: 0px 10px;
+    background-color: burlywood;
+}
+
+.big-head-links{
+    display: flex;
+    margin-top: -13px;
+    margin-left: 820px;
+}
+
+.head-link{
+    background-color: rgba(128, 128, 128, 0.63);
+    width: 90px;
+    height: 20px;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    transition-duration: .5s;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+}
+
+.head-link:hover{
+    border: 3px solid white;
+}
+
+.in-head-links{
+    background-color: rgb(177, 177, 177);
+    width: 230px;
+    height: 135px;
+    display: none;
+    transition-duration: .5s;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    padding: 4px;
+    text-align: left;
+    border-radius: 5px;
+    text-shadow: 2px 0px 12px black;
+}
+
+.head-link:hover :only-child{
+    display: block;
+}
+.in-head-links a{
+    text-decoration: none;
+    background-color: rgb(64, 64, 255);
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+    display: block;
+    margin-top: 4px;
+}
+
+.video-lable-test{
+    text-align: center;
+    color: white;
+    direction: rtl;
+}
+
+.elkbeer{
+    display: block;
+    margin: auto;
+    width: 700px;
+}
